@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>O.B Montessori Center</title>
+  <link rel="icon" type="image/png" href="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/8b5611eb-ff3a-407f-9adc-e116a23373fc/OBMC+LOGO+2024-04.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Gill Sans, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      background-color: #002855;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .navbar img {
+      height: 45px;
+    }
+
+    .nav-link {
+      color: #FFD500 !important;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px black;
+      margin-left: 15px;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image:
+        linear-gradient(rgba(0,40,85,0.75), rgba(0,40,85,0.75)),
+        url("https://obmontessori.orangeapps.ph/landing/obmontessori/images/FV%20Facade.jpg");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      padding: 110px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s;
+    }
+
+    .hero h1 {
+      color: #FFD500;
+      font-size: 3rem;
+      text-shadow: 3px 3px 8px black;
+    }
+
+    .hero p {
+      color: white;
+      font-size: 1.3rem;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .section-title {
+      color: #002855;
+      text-align: center;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 3px gray;
+    }
+
+    .about {
+      padding: 70px 20px;
+      animation: slideUp 1.3s;
+    }
+
+    .about-box {
+      background-color: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    .info-card {
+      background-color: #002855;
+      color: white;
+      border-radius: 18px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .info-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .info-card h4 {
+      color: #FFD500;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    footer {
+      background-color: #002855;
+      color: #FFD500;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container d-flex align-items-center">
+    
+    <!-- LOGO -->
+    <a class="navbar-brand" href="index.html">
+      <img src="https://obmontessori.orangeapps.ph/landing/obmontessori/images/ob-logo.png" alt="School Logo">
+    </a>
+
+    <!-- LINKS -->
+    <div class="ms-auto">
+      <a class="nav-link d-inline" href="index.html">Home</a>
+      <a class="nav-link d-inline" href="gwa.html">Grade Calculator</a>
+      <a class="nav-link d-inline" href="clubs.html">Clubs</a>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1> Operation Brotherhood Montessori Center</h1>
+  <p>Since 1966</p>
+</section>
+
+<!-- ABOUT -->
+<section class="about container">
+  <h2 class="section-title">About Our School</h2>
+  <div class="about-box">
+    <p>
+      Operation Brotherhood Montessori Center is a progressive pre-k to 12 co-educational school, offering a viable alternative to international schools. We blend tradition and innovation to prepare a child for life. 
+    </p>
+  </div>
+</section>
+
+<!-- INFO CARD -->
+<section class="container d-flex justify-content-center">
+  <div class="col-md-6">
+    <div class="info-card">
+      <h4>Mission</h4>
+      <p>To transform our students into self-developing and productive individuals who can succeed, direct, and influence the future of an ever-changing world.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 1966 Operation Brotherhood Montessori Center | ICT 10 Q2 Project
+</footer>
+
+</body>
+</html>

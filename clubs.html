@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Information</title>
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+
+    <!-- Bootstrap -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+        body {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+            background-color: #eaf0ff; 
+        }
+
+        .navbar {
+            background-color: #002855;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        .navbar img {
+            height: 45px;
+        }
+
+        .nav-link {
+            color: #FFD500 !important;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px black;
+            margin-left: 15px;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #002855; 
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        hr {
+            border-color: #002855;
+            border-width: 2px;
+        }
+
+        label {
+            color: #002855;
+            font-weight: bold;
+        }
+
+        #details {
+            background: #fff8cc; 
+            padding: 20px;
+            border-left: 6px solid #ffd500; 
+            border-radius: 6px;
+            white-space: pre-line;
+            min-height: 220px;
+            margin-top: 20px;
+        }
+
+        #showBtn {
+            background-color: #002855; 
+            color: #ffd500;            
+            border: none;
+        }
+
+        #showBtn:hover {
+            background-color: #001a3a;
+        }
+
+        .form-select {
+            border: 2px solid #002855;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center">
+
+            <!-- LOGO -->
+            <a class="navbar-brand" href="index.html">
+                <img src="https://obmontessori.orangeapps.ph/landing/obmontessori/images/ob-logo.png" alt="School Logo">
+            </a>
+
+            <!-- LINKS -->
+            <div class="ms-auto">
+                <a class="nav-link d-inline" href="index.html">Home</a>
+                <a class="nav-link d-inline" href="gwa.html">Grade Calculator</a>
+                <a class="nav-link d-inline" href="clubs.html">Clubs</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="container py-4">
+
+        <h1 class="text-center mb-3">School Club Information</h1>
+        <hr>
+
+        <label>Select a Club:</label> 
+        <select id="clubSelect" class="form-select mb-3">
+            <option value="">-- Choose a Club --</option>
+            <option>Marching Band</option>
+            <option>Glee Club</option>
+            <option>Dance Club</option>
+            <option>Math Club</option>
+            <option>Science Club</option>
+            <option>Communications Arts Club</option>
+            <option>COCC</option>
+            <option>Social Science Club</option>
+            <option>Volleyball Varsity</option>
+            <option>Basketball Varsity</option>
+        </select>
+
+        <button id="showBtn" class="btn w-100">
+            Show Club Information
+        </button>
+
+        <div id="details"></div>
+
+        <!-- Python -->
+        <py-script src="clubs.py"></py-script>
+
+    </div>
+
+</body>
+</html>
